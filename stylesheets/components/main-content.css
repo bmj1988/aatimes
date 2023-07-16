@@ -1,1 +1,65 @@
-/* Your code here */
+.main_grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    width: auto;
+    grid-template-areas:
+    "a b";
+}
+.block1_grid {
+    display: grid;
+    grid-template-rows: 4fr 1fr ;
+    grid-area: a;
+    width:min-content
+}
+.block2_grid {
+    display: grid;
+    grid-template-rows: .2fr 2fr;
+    margin: 20px;
+}
+.block3_grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr ;
+    column-gap: 50px;
+
+}
+#block4 {
+display:grid;
+grid-template-columns: .35fr .65fr;
+column-gap: 40px;
+}
+.block5 {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-area:b;
+
+}
+#block8 {
+    grid-template-areas:
+    "a b"
+    "c d"
+    "e f"
+    "g";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+.article {
+    font-size: 9px;
+}
+.article_header {
+    font-size: 12;
+    font-weight: bold;
+
+}
+.article_byline {
+    color: gray;
+    font-size: 10px;
+
+}
+
+.article_title {
+
+}
+
+.vid_block {
+
+}

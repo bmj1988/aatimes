@@ -1,1 +1,78 @@
-/* Your code here */
+.masthead {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "menus . actions"
+    ". techs ."
+    "date logo paper";
+  }
+.m_menu_search {
+    grid-area: menus;
+    display: flex;
+    align-items:center;
+    padding: 0px 0px 0px 20px
+
+}
+.m_action_button {
+    grid-area: actions;
+    display: flex;
+    font-size: 11px;
+    align-items: center;
+    justify-content: flex-end;
+    height: 50px
+
+}
+.m_techs {
+    grid-area: techs;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 1px;
+    background-color: white;
+}
+.m_date {
+    grid-area: date;
+    font-size: 11px;
+    display: flex;
+    align-items: flex-end;
+    padding: 0px 0px 10px;
+    border-bottom: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+}
+.m_logo {
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:15px 0px 10px 0px;
+    border-bottom: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+}
+.m_paper {
+    grid-area: paper;
+    font-size: 11px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    border-bottom: 1px solid lightgray;
+    padding: 0px 0px 10px;
+    border-top: 1px solid lightgray;
+}
+.masthead_button_icon {
+    font-size: 11px;
+    padding: 7px 9px;
+}
+.masthead_button_icon:hover{
+    background-color: #f7f7f5;
+}
+.l_tech {
+    font-size: 10px;
+    color: darkgray;
+    margin: 10px
+}
+.l_tex {
+    border-top: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+}
