@@ -3,37 +3,52 @@
     grid-template-columns: 2fr 1fr;
     width: auto;
     grid-template-areas:
-    "a b";
+    "at bt";
 }
 .block1_grid {
     display: grid;
     grid-template-rows: 4fr 1fr ;
-    grid-area: a;
-    width:min-content
+    grid-area: at;
+    border-right: 1px solid lightgray;
 }
 .block2_grid {
     display: grid;
     grid-template-rows: .2fr 2fr;
-    margin: 20px;
+    margin-top: 20px;
+
+
 }
 .block3_grid {
     display: grid;
     grid-template-columns: 2fr 1fr ;
-    column-gap: 50px;
+    column-gap: 20px;
 
 }
 #block4 {
 display:grid;
 grid-template-columns: .35fr .65fr;
 column-gap: 40px;
+border-bottom: 1px solid black;
+border-top: 1px solid black;
+
+
 }
 .block5 {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-area:b;
+    grid-area:bt;
 
 }
+#block6 {
+    padding: 10px;
+    border-bottom:1px solid lightgray;
+}
+#block7 {
+    padding:20px;
+    border-bottom:1px solid lightgray;
+}
 #block8 {
+    display: grid;
     grid-template-areas:
     "a b"
     "c d"
@@ -41,25 +56,59 @@ column-gap: 40px;
     "g";
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
+    padding:5px;
+    column-gap: 10px;
 }
 .article {
-    font-size: 9px;
+    font-size: 10px;
 }
 .article_header {
-    font-size: 12;
+    font-size: 12px;
     font-weight: bold;
 
 }
 .article_byline {
     color: gray;
     font-size: 10px;
-
+    padding: 10px 5px;
 }
-
+.small_byline {
+    font-size: 12px;
+}
+#shortstory {
+    border-bottom: 1px solid lightgray;
+}
 .article_title {
-
+ font-size: 18px;
 }
 
 .vid_block {
-
+}
+.comments {
+    color: teal;
+    margin-top: 10px;
+}
+.titleOps {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 10px 0px;
+}
+.block1_header {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-style:italic;
+}
+@media screen and (max-width:1199px) {
+    .main_grid {
+        display: grid;
+        grid-template-columns:1fr;
+        width: auto;
+        grid-template-areas:
+        "at"
+    }
+    .block5 {
+        display: none;
+        visibility: hidden;
+    }
 }
